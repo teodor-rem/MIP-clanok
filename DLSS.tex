@@ -1,6 +1,6 @@
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,twoside,english,a4paper]{article}
 
-\usepackage[slovak]{babel}
+\usepackage[english]{babel}
 \usepackage[IL2]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -34,86 +34,51 @@ The main goal of this paper is to enlighten the reader with the current technolo
 
 
 \section{Introduction}
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+Recently, video games have begun to look more and more realistic. Even when compared to games from the early 2010s, the difference in graphics quality is very noticeable. This exponential improvement in quality can largely be attributed to the improvement of graphical processing unit (GPU) hardware. However, at this point in time, it seems as though the latest improvements in hardware have come at great expense in the aspects of power consumption and size. A different way to further improve graphical quality is through the use of software. This paper will explore such software solutions, mainly in respect to current technologies that were developed for use in video games.
+
+The problem of increasing GPU workloads is further elaborated upon in the second section (section~\ref{rise}), then, in the third (section~\ref{aasr}) and fourth (section~\ref{deep}) sections, this paper describes some individual types of the beforementioned software solutions, what each of them offer and how they compare. In the fifth section (section~\ref{challenges}), this paper expands on the current challenges of said solutions and the potential methods for overcoming the challenges. Finally, a conclusion (section~\ref{conclusion}) is given at the end on the current state of graphical processing in video games, the solutions to problems arising therein and their potential future developments.
 
 
+\section{Rising GPU workloads} \label{rise}
 
-\section{Nejaká časť} \label{nejaka}
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
+As can be seen from fig.~\ref{f:graph}, GPU hardware capabilities have grown exponentially in recent years. However, the demand for these capabilities has also increased exponentially, especially in regards to real-time rendering (RTR). RTR is "the generation of multiple high-resolution frames every second in real time, to give the illusion of motion and interaction. RTR for modern desktop, VR and mobile device applications is becoming exponentially difficult because of higher resolutions and a general focus on photorealism at high framerates. Recent high-end monitors now provide support for resolutions up to 7680 x 4320 pixels at refresh rates of 240 Hz. This, along with recent advances and implementations of physical shading, ray tracing, accurate physics simulations, and higher quality texture models, makes it difficult for even current generation GPUs to render images at native resolutions without compromising framerates."\cite{9441822}
 
 \begin{figure*}[tbh]
 \centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
+\includegraphics[scale=0.4]{gpugraph.jpg}
+\caption{The evolution of GPU performance.}
+\url{https://www.rtinsights.com/gpus-the-key-to-cognitive-computing/}
+\label{f:graph}
 \end{figure*}
 
 
 
-\section{Iná časť} \label{ina}
+\section{Anti-aliasing and Superresolution} \label{aasr}
 
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+\subsection{Anti-aliasing} \label{aasr:aa}
 
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+\subsection{Superresolution} \label{aasr:sr}
 
+\section{Deep Learned Technologies} \label{deep}
 
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+\subsection{Deep Learning Super Sampling} \label{deep:dlss}
 
-Niekedy treba uviesť zoznam:
+\subsection{Neural Super Sampling} \label{deep:neural}
 
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
-
-Ten istý zoznam, len číslovaný:
-
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
-
-
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
+\section{Challenges and potential solutions} \label{challenges}
 
 
 
 
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+\section{Conclusion} \label{conclusion}
 
 
 
-
-\section{Záver} \label{zaver} % prípadne iný variant názvu
-
+%\acknowledgement{\ldots}
 
 
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
-
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliographystyle{plain}
 \end{document}
