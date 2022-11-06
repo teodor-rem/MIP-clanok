@@ -1,25 +1,29 @@
+% Metódy inžinierskej práce 
+
 \documentclass[10pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
-\usepackage[IL2]{fontenc}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{url}
-\usepackage{hyperref} 
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
 
 \usepackage{cite}
+%\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Usage of deep learning techniques, super-resolution and upscaling in video games\thanks{Semester project in the subject Methods of engineering work (MIP), academic year 2022/23, supervising teacher: Ing. Igor Stupavský}}
+\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
 
-\author{Teodor Reménység\\[2pt]
+\author{Meno Priezvisko\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{xremenyseg@stuba.sk}}
+	{\small \texttt{...@stuba.sk}}
 	}
 
-\date{\small 6. November 2022}
+\date{\small 30. september 2015} % upravte
 
 
 
@@ -28,12 +32,13 @@
 \maketitle
 
 \begin{abstract}
-The main goal of this paper is to enlighten the reader with the current technologies used in video games, which work to lessen the workload on the processing units of the user’s computer during rendering and therefore enhance their immersion and overall experience while playing. Further, it will look at the other possible applications of these technologies and explore where and how they are currently being used, their positives, negatives and will showcase some of their teething troubles and cases where they shouldn’t have been used. A conclusion will be drawn on whether or not these technologies can and should be massively adopted based on the approaches that are possible today.
+\ldots
 \end{abstract}
 
 
 
-\section{Introduction}
+\section{Úvod}
+
 Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
 
 Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
@@ -114,6 +119,6 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{literatura}
+\bibliography{literatura1}
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
